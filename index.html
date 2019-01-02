@@ -1,17 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assests/css/reset.css">
-    <link rel="stylesheet" href="assests/css/style.css">
-    <title>Document</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="assests/css/reset.css">
+      <link rel="stylesheet" href="assests/css/style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"  crossorigin="anonymous">
+
+      <title>Word Guess Game</title>
 </head>
-<body>
-    <div id="game">
-        <h1 id="spots" style="margin: 10px"></h1>
-    </div>
-<script src="assests\javascript\game.js"></script>    
+
+<body class="">
+
+      <audio id="myAudio">
+            <source src="assests/music/ogg/Rain_Piano.ogg" type="audio/ogg">
+            <source src="assests/music/Rain_Piano.mp3" type="audio/mpeg">
+      </audio>
+
+      <div id="game" class="container ">
+            <div class="row">
+
+                  <div class="col wint">
+                        <h1 class="winter">Winter Season</h1>
+                  </div>
+
+                  <div class="gameText col-8 border pt-3">
+
+                        <div class="center pb-4">
+                              <button onclick="restart(), playAudio()" class=" btn btn-success mr-1 spacing">Start or Restart!</button>
+
+                              <button onclick="playAudio()" type="button" class=" btn btn-light">Play Music</button>
+
+                              <button onclick="pauseAudio()" type="button" class=" btn btn-light">Pause Music</button>
+                        </div>
+
+                        <p class="text-success font-weight-bold lead ml-5">Word: <span id="word"></span></p>
+
+                        <p class="text-primary font-weight-bold lead ml-5">Your Guesses: <span id="yourGuess"></span></p>
+
+                        <p class="text-info font-weight-bold lead ml-5">Lives: <span id="livesLeft"></span></p>
+
+                        <p class="text-warning font-weight-bold lead ml-5">Letters Left: <span id="lettersLeft"></span></p>
+
+                        <p class="text-primary font-weight-bold lead ml-5">Score: <span id="youWin"></span></p>
+
+                        <p class="text-danger font-weight-bold lead ml-5"><span id="already"></span></p>
+
+
+
+                  </div>
+            </div>
+      </div>
+
+      <script src="assests\javascript\game.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
+body{
+      background-image: url(../images/morocco.png);
+}
+.container{
+      background-color: #004a68;
+}
+.gameText {
+      margin: 10%;
+      margin-left: 15%;
+}
+
+.center {
+      margin-left: 10%;
+}
+spacing{
+      margin-bottom: 10%;
+}
+.wint{
+      margin-top: 30px;
+      padding: 10px;
+      background-image: url(../images/pexels-photo-773594.jpeg);
+}
+
+
+.winter {
+      margin-left: 20%;
+      color: #fff;
+      font-size: 6rem;
+      font-family: 'Staatliches', cursive;
+
+}
