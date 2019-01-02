@@ -64,6 +64,7 @@ function restart() {
       document.getElementById("yourGuess").innerHTML = guessedLetters;
       document.getElementById("lettersLeft").innerHTML = letters;
       document.getElementById("livesLeft").innerHTML = lives;
+      document.getElementById("youWin").innerHTML = score;
 }
 
 function game() {
