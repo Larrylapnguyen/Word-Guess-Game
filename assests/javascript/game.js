@@ -57,9 +57,7 @@ function restart() {
       console.log(blanks.length + " Blanks");
       console.log(chosenWord + " New Chosen word");
       lives = 10;
-
-
-
+      score=0;
 
 
       b.innerHTML = blanks.join(" ");
