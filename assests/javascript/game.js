@@ -5,7 +5,7 @@
 */
 
 //Word Generation
-var words = ["snowman", "snowball", "hail", "snow", "blizzard", "frozen", "icicle", "cold", "frost"];
+var words = ["snowman", "snowball", "hail", "snow", "blizzard", "frozen", "icicle", "cold", "frost", "mistletoe"];
 var randomWordNum;
 var possLetters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var word; 
